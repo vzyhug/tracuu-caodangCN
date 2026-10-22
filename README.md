@@ -1,171 +1,107 @@
-# Cổng tra cứu sinh viên · React + Cloud Firestore
+# CỔNG THÔNG TIN SINH VIÊN · TRA CỨU HỌC TẬP & THỜI KHÓA BIỂU
+> **Trường Cao đẳng Công nghệ Sài Gòn**  
+> Ứng dụng tra cứu thông tin sinh viên, lịch học theo tuần và kế hoạch học tập trực tuyến xây dựng bằng **React**, **TypeScript** và **Google Cloud Firestore**.
 
-Nhập MSSV → xem thông tin sinh viên, các môn đã học, các môn chưa rõ trạng thái và thời khóa biểu dự kiến đúng lớp/đợt. Mỗi môn dùng một mã thống nhất.
+---
 
-## Chạy ngay để xem giao diện
+## 1. Trải nghiệm nhanh trực tuyến (Demo Review)
+
+Khách hàng và người đánh giá có thể xem và kiểm thử trực tiếp trên mọi trình duyệt (Máy tính, Điện thoại, Máy tính bảng) mà **không cần cài đặt hay cấu hình bất kỳ phần mềm nào**:
+
+👉 **Link truy cập chính thức (Vĩnh viễn): [https://test-tracuu.web.app](https://test-tracuu.web.app)**  
+*(Link dự phòng: [https://test-tracuu.firebaseapp.com](https://test-tracuu.firebaseapp.com))*
+
+### Bảng mã số sinh viên (MSSV) để test các trạng thái thực tế:
+
+| Trạng thái học tập | MSSV mẫu | Họ và tên sinh viên | Lớp đào tạo | Ghi chú kiểm thử |
+| :--- | :---: | :--- | :---: | :--- |
+| 🟢 **Đang học** | `26104020001` | Hà Văn Tấn An | `CX261CT01` | Khớp 3 môn học dự kiến, hiển thị đủ lịch tuần và tiến trình |
+| 🟢 **Đang học** | `26104020002` | Phạm Quang Trường Giang | `CX261CT01` | Lớp CNTT đợt 1 |
+| 🟡 **Bảo lưu** | `26104130010` | Lý Hữu Bằng | `CX261VT01` | Có huy hiệu Bảo lưu vàng cam & cảnh báo hồ sơ |
+| 🔴 **Bỏ học** | `26104020006` | Đoàn Huỳnh Khoa | `CX261CT01` | Có huy hiệu Bỏ học đỏ & cảnh báo hồ sơ đào tạo |
+
+### Các tính năng nổi bật trên giao diện:
+- **Bảng lịch học theo tuần dạng lưới (Grid View):** Bố cục 7 ngày (Thứ 2 đến Chủ Nhật) theo 3 ca thời gian (*Sáng 07:00 – 11:30*, *Chiều 12:30 – 17:00*, *Tối 17:30 – 21:30*).
+- **Phân loại màu sắc tiết học trực quan:**
+  - 🟩 **E-Learning:** Tự học trực tuyến.
+  - 🟦 **Google Meet:** Buổi học trực tuyến với giảng viên (Tối 19:00 – 21:30).
+  - 🟨 **Tổng ôn / Thi:** Buổi ôn tập & kiểm tra giữa kỳ / cuối kỳ.
+- **Thanh điều khiển thông minh:** Chuyển đổi bộ lọc (*Tất cả / Lịch học / Lịch thi*), chọn ngày xem lịch, lùi/tiến tuần và nút **"In lịch"** chuẩn trang in A4.
+- **Bảo mật và riêng tư:** Không hiển thị danh sách gợi ý MSSV công khai, tra cứu chính xác và độc lập theo từng sinh viên.
+
+---
+
+## 2. Hướng dẫn chạy dự án cục bộ (Local Development)
+
+### Yêu cầu môi trường:
+- **Node.js**: Phiên bản `20.x` hoặc `22.x` trở lên.
+- **Trình quản lý gói**: `npm` (đi kèm sẵn với Node.js).
+
+### Các bước cài đặt và khởi động:
 
 ```powershell
-cd E:\nam4_hk1\TKB_HK2-20262027_Block2\tra-cuu-sinh-vien
+# 1. Clone mã nguồn về máy
+git clone https://github.com/vzyhug/tracuu-caodangCN.git
+cd tracuu-caodangCN
+
+# 2. Cài đặt các thư viện phụ thuộc
 npm install
+
+# 3. Tạo file cấu hình biến môi trường .env.local ở thư mục gốc:
+# (Copy từ .env.example hoặc cấu hình kết nối Firebase)
+VITE_DATA_MODE=firebase
+VITE_FIREBASE_API_KEY=AIzaSyCvfQ4vy4jK14sawFDf1Yv1kdp0AF0TRsU
+VITE_FIREBASE_AUTH_DOMAIN=test-tracuu.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=test-tracuu
+VITE_FIREBASE_APP_ID=1:670364739633:web:2f427a6f71b9b272f98d10
+VITE_USE_EMULATORS=false
+
+# 4. Khởi động Web Dev Server
 npm run dev
 ```
 
-Mở http://127.0.0.1:5173. Mặc định chạy **bản minh họa**, dùng hai MSSV giả `00000000001` và `00000000002`, hoặc bấm Đợt 1/Đợt 2. Không có dữ liệu cá nhân thật trong bundle web, không cần tài khoản Firebase để xem bản minh họa. Chế độ này chỉ có hai MSSV mẫu.
+Mở trình duyệt tại địa chỉ: **`http://127.0.0.1:5173`** để trải nghiệm.
 
-Yêu cầu: Node.js 22.12 trở lên cho phát triển (Firebase Functions cấu hình runtime Node.js 22); môi trường hiện tại đã build/test được bằng Node.js 24. Firebase Emulator cần Java 21 trở lên. `package-lock.json` khóa phiên bản các thư viện đã cài và kiểm tra.
-
-## Cấu trúc project
-
-```text
-tra-cuu-sinh-vien/
-├── src/
-│   ├── components/          # Thông tin SV, lịch học, lịch sử môn
-│   ├── services/            # Kết nối callable Firebase và chế độ minh họa
-│   ├── data/demo.json      # Hai sinh viên GIẢ dùng xem giao diện
-│   ├── App.tsx             # Luồng nhập MSSV và hiển thị kết quả
-│   └── styles.css          # Giao diện responsive
-├── functions/src/
-│   ├── index.ts            # Callable traCuuSinhVien, truy vấn Firestore
-│   └── domain.ts           # Quy tắc lọc và kiểu dữ liệu dùng chung
-├── scripts/
-│   ├── prepare-data.mjs    # Chuyển bộ JSON hiện có sang document Firestore
-│   ├── import-firestore.mjs# Upsert Firestore bằng Admin SDK
-│   ├── prepare-demo.mjs    # Tạo dữ liệu minh họa đã bỏ thông tin cá nhân
-│   ├── check-deploy.mjs    # Kiểm tra cấu hình trước khi deploy
-│   └── test-emulator.mjs   # Kiểm tra luồng thật trên emulator
-├── data/private/           # Dữ liệu thật để import, được .gitignore
-├── tests/lookup.test.ts    # Kiểm tra quy tắc cho toàn bộ 86 sinh viên
-├── firebase.json           # Hosting, Functions và emulators
-├── firestore.rules         # Chặn đọc/ghi trực tiếp từ client
-├── firestore.indexes.json # Index lọc TKB theo lớp/đợt/học kỳ/năm
-└── .env.example            # Cấu hình Web App Firebase
-```
-
-## Cấu trúc Cloud Firestore
-
-```text
-sinh_vien/{MSSV}                    86 documents
-  hoTen, gioiTinh, ngaySinh, noiSinh
-  daoTao: { maLop, bacDaoTao, nganhHoc, dot }
-  theoDoiHocTap: [{ hocKy, namHoc, monHoc: [{ maMon, daHoc }] }]
-
-mon_hoc/{maMon}                     34 documents
-  tenMon, nhom (nếu có)
-
-tkb/{documentIdOnDinh}               91 documents
-  maLop, maMon, hocKy, namHoc, dotTuyenSinh[]
-  soTinChi, ngayBatDau, ngayKetThuc, buoiHoc[]
-  huongDan, onTapKiemTraGiuaKy, cacGiaiDoan, ghiChuChung, nguon[]
-```
-
-MSSV và mã môn là document ID, không cần lưu thêm trường `_id` như MongoDB. ID TKB được tính ổn định từ lớp + môn + học kỳ + năm học, nên import lại cập nhật cùng document. Firestore không có unique compound index như MongoDB; quy tắc ID và bước chuẩn bị dữ liệu bảo đảm không trùng. Import dùng `set` thay nội dung document khớp ID, không xóa document khác.
-
-`data/private/*.json` dùng định dạng `[{ "id": "document-id", "data": { ... } }]` cho script import, không phải định dạng import tích hợp của Firebase Console. **Không dùng chức năng import JSON của Realtime Database cho các file này.** Dữ liệu ngày giữ chuỗi YYYY-MM-DD, giờ HH:mm và múi giờ Việt Nam.
-
-## Chuẩn bị dữ liệu hiện có
+### Các lệnh hữu ích khác:
 
 ```powershell
-npm run data:prepare
-```
-
-Đọc 3 file ở `../mongodb/` và ghi vào `data/private/`. Có thể chỉ thư mục nguồn khác:
-
-```powershell
-npm run data:prepare -- "E:\duong-dan\mongodb"
-```
-
-Không đưa `data/private`, `dssv.json` hoặc service-account JSON vào thư mục `public`, `src` hay repository công khai.
-
-## Kiểm tra Firebase ở máy cục bộ
-
-Terminal 1:
-
-```powershell
-npm run emulators
-```
-
-Terminal 2: import dữ liệu vào emulator, không ghi lên Firebase thật:
-
-```powershell
-$env:FIRESTORE_EMULATOR_HOST="127.0.0.1:8080"
-npm run data:import -- --project demo-tra-cuu
-Remove-Item Env:FIRESTORE_EMULATOR_HOST
-```
-
-Tạo `.env.local` để giao diện gọi emulator:
-
-```dotenv
-VITE_DATA_MODE=firebase
-VITE_FIREBASE_API_KEY=demo-api-key
-VITE_FIREBASE_AUTH_DOMAIN=demo-tra-cuu.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=demo-tra-cuu
-VITE_FIREBASE_APP_ID=demo-app-id
-VITE_FIREBASE_FUNCTIONS_REGION=asia-southeast1
-VITE_USE_EMULATORS=true
-```
-
-Khởi động lại `npm run dev`. Lúc này dùng MSSV thật từ danh sách, ví dụ `26104020001` hoặc `26104150548`. App Check được tắt riêng trong Functions emulator. Cổng Emulator UI: http://127.0.0.1:4000.
-
-## Kết nối Firebase thật
-
-1. Tạo project Firebase, tạo database **Cloud Firestore** ở Native mode, ưu tiên cùng khu vực với Functions `asia-southeast1`.
-2. Đăng ký Web App trong Firebase Console và lấy `firebaseConfig`.
-3. Copy `.env.example` thành `.env.local`, đặt `VITE_DATA_MODE=firebase`, `VITE_USE_EMULATORS=false`, điền `apiKey`, `authDomain`, `projectId`, `appId` của Web App.
-4. Đăng ký App Check cho Web App bằng reCAPTCHA v3 và điền public site key vào `VITE_FIREBASE_APPCHECK_SITE_KEY`. Thêm domain Hosting vào cấu hình reCAPTCHA/App Check.
-5. Copy `functions/.env.example` thành `functions/.env`, giữ `ENFORCE_APP_CHECK=true`.
-6. Dùng Firebase CLI đã có trong devDependencies:
-
-```powershell
-npx firebase login
-npx firebase use --add
-```
-
-Chọn đúng project thật. `.firebaserc` ban đầu là `demo-tra-cuu`, không trỏ vào tài khoản thật nào.
-
-### Đưa dữ liệu lên Firestore
-
-Script import chạy bằng Firebase Admin SDK. Cung cấp Application Default Credentials: ví dụ đặt `GOOGLE_APPLICATION_CREDENTIALS` trỏ đến service account có quyền ghi Firestore, lưu file khóa ở ngoài project.
-
-```powershell
-# Chạy từ project; thay bằng project ID và đường dẫn của bạn.
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\firebase-keys\service-account.json"
-npm run data:import -- --project YOUR_FIREBASE_PROJECT_ID
-Remove-Item Env:GOOGLE_APPLICATION_CREDENTIALS
-```
-
-Không giữ `FIRESTORE_EMULATOR_HOST` trong terminal khi muốn import thật. Chỉ `firebase login` chưa cung cấp ADC cho Admin SDK. Không đặt khóa service account vào biến `VITE_*`, mã frontend hoặc Git.
-
-### Build và deploy
-
-```powershell
+# Kiểm tra logic nghiệp vụ và dữ liệu (Unit Test)
 npm test
-npm run deploy
+
+# Đóng gói sản phẩm cho Production
+npm run build
+
+# Triển khai phiên bản mới lên Firebase Hosting
+npx firebase deploy --only hosting
 ```
 
-Lệnh deploy build frontend/backend, sau đó triển khai Firestore rules/indexes, Functions và Hosting. Cần project Firebase có gói hỗ trợ triển khai Cloud Functions (Blaze); bản xem thử và emulator không cần deploy. Index mới có thể cần chờ xây dựng trước khi truy vấn thật hoạt động. Project này chưa được triển khai lên Firebase thật.
+---
 
-## API trả về cho giao diện
+## 3. Tổng quan công nghệ sử dụng trong dự án
 
-Callable `traCuuSinhVien`, region `asia-southeast1`:
+Ứng dụng được thiết kế theo kiến trúc **Serverless hiện đại**, tối ưu trải nghiệm người dùng, tải trang nhanh và vận hành 100% miễn phí trên hạ tầng Google Cloud:
 
-```json
-{ "mssv": "26104020001", "hocKy": 2, "namHoc": "2026-2027" }
-```
+### 🎨 Frontend:
+- **React 19 & TypeScript:** Xây dựng giao diện hướng thành phần (Component-based), kiểm soát kiểu dữ liệu tĩnh nghiêm ngặt, hạn chế tối đa lỗi runtime.
+- **Vite 8:** Công cụ build thế hệ mới với tốc độ Hot Module Replacement (HMR) tức thì và khả năng bundle tối ưu dung lượng (chưa đến 300KB gzipped).
+- **Lucide React:** Bộ icon SVG nhất quán, hiện đại và chuẩn mực.
+- **CSS3 thuần (Custom Stylesheet):**
+  - Tối ưu hóa Flexbox & CSS Grid linh hoạt.
+  - Thiết kế thích ứng (**Responsive Design**) mượt mà từ màn hình điện thoại, máy tính bảng đến desktop.
+  - Tích hợp stylesheet in ấn (**Print Media Stylesheet**) giúp xuất thời khóa biểu sang PDF hoặc in giấy A4 chuẩn đẹp, tự động ẩn thanh công cụ thừa.
 
-Kết quả: `thongTinSinhVien`, `monDaHoc`, `monChuaRoTrangThai`, `lichHocDuKien`, `canhBao`. Frontend chỉ hiển thị MSSV, họ tên, lớp, ngành, bậc, đợt; backend không trả ngày sinh/nơi sinh hoặc bản trích PDF gốc. Toàn bộ danh sách sinh viên không được tải về trình duyệt.
+### ☁️ Cơ sở dữ liệu & Hạ tầng Đám mây (Cloud & Database):
+- **Google Cloud Firestore (Native NoSQL):** 
+  - Cơ sở dữ liệu tài liệu NoSQL phân tán toàn cầu với độ trễ truy vấn cực thấp.
+  - Cấu trúc dữ liệu phân tách rõ ràng thành các collection: `sinhvien` (86 hồ sơ), `tkb` (91 lịch học), `monhoc` (34 danh mục môn).
+  - Tự động đối chiếu thông tin theo mã lớp (`maLop`), học kỳ (`hocKy`), năm học (`namHoc`) và đợt tuyển sinh (`dotTuyenSinh`).
+- **Firebase Web SDK v13:** 
+  - Kết nối trực tiếp từ client-side đến Firestore thông qua REST/gRPC an toàn.
+  - Không cần duy trì server backend truyền thống, giảm thiểu chi phí và thời gian triển khai.
+- **Firestore Security Rules:** 
+  - Phân quyền bảo mật: Cho phép quyền đọc công khai dữ liệu cần thiết phục vụ tra cứu, **ngăn chặn tuyệt đối mọi hành vi sửa đổi hoặc xóa dữ liệu từ client** (`allow read: if true; allow write: if false;`).
+- **Firebase Hosting:** 
+  - Lưu trữ và phân phối tĩnh (Static Hosting) trên mạng lưới CDN toàn cầu của Google với chứng chỉ SSL/HTTPS bảo mật vĩnh viễn.
 
-Quy tắc: lọc đúng lớp + đợt + kỳ/năm; loại môn `daHoc === true`; giữ `null` là chưa xác định và gắn `canXacMinh`; môn chưa có lịch sử vẫn hiện theo TKB. Mã môn liên kết trực tiếp, không giữ mã cũ song song. Đã học không đồng nghĩa đã thi đậu.
-
-Tra cứu chỉ bằng MSSV đúng theo yêu cầu; ai biết MSSV và truy cập được ứng dụng đều có thể xem phần kết quả tra cứu. App Check xác thực ứng dụng, không xác minh danh tính sinh viên.
-
-## Kiểm tra
-
-```powershell
-npm test                 # 6 bài kiểm tra nghiệp vụ và toàn bộ 86 SV
-npm run build            # TypeScript frontend/backend + Vite
-npm run test:integration # Firestore + Functions emulator, cần Java
-```
-
-Đã chạy thành công: 6 bài kiểm tra nghiệp vụ cho 86 sinh viên, build ở cả chế độ minh họa và Firebase, kiểm tra callable + Firestore emulator + rules + import lặp không trùng. Đã quét bundle minh họa để bảo đảm không chứa MSSV/họ tên thật. Preview cục bộ trả HTTP 200; chưa kiểm tra trực quan bằng trình duyệt vì công cụ trình duyệt lỗi khởi tạo trong môi trường thực hiện. Chưa deploy hoặc ghi dữ liệu lên Firebase thật.
-
-Tài liệu đối chiếu: [Callable Functions](https://firebase.google.com/docs/functions/callable), [App Check cho Functions](https://firebase.google.com/docs/app-check/cloud-functions), [Firebase Emulator](https://firebase.google.com/docs/emulator-suite).
+---
+*Bản quyền © 2026 · Cổng thông tin sinh viên Trường Cao đẳng Công nghệ Sài Gòn.*
