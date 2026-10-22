@@ -11,14 +11,12 @@ Khách hàng và người đánh giá có thể xem và kiểm thử trực ti�
 👉 **Link truy cập chính thức (Vĩnh viễn): [https://test-tracuu.web.app](https://test-tracuu.web.app)**  
 *(Link dự phòng: [https://test-tracuu.firebaseapp.com](https://test-tracuu.firebaseapp.com))*
 
-### Bảng mã số sinh viên (MSSV) để test các trạng thái thực tế:
-
-| Trạng thái học tập | MSSV mẫu | Họ và tên sinh viên | Lớp đào tạo | Ghi chú kiểm thử |
-| :--- | :---: | :--- | :---: | :--- |
-| 🟢 **Đang học** | `26104020001` | Hà Văn Tấn An | `CX261CT01` | Khớp 3 môn học dự kiến, hiển thị đủ lịch tuần và tiến trình |
-| 🟢 **Đang học** | `26104020002` | Phạm Quang Trường Giang | `CX261CT01` | Lớp CNTT đợt 1 |
-| 🟡 **Bảo lưu** | `26104130010` | Lý Hữu Bằng | `CX261VT01` | Có huy hiệu Bảo lưu vàng cam & cảnh báo hồ sơ |
-| 🔴 **Bỏ học** | `26104020006` | Đoàn Huỳnh Khoa | `CX261CT01` | Có huy hiệu Bỏ học đỏ & cảnh báo hồ sơ đào tạo |
+### Cơ chế tra cứu & Bảo mật thông tin:
+- Người dùng nhập **Mã số sinh viên cá nhân (11 chữ số)** vào thanh tìm kiếm để tra cứu riêng tư.
+- Hệ thống tự động nhận diện và phản hồi đúng trạng thái hồ sơ của sinh viên:
+  - 🟢 **Đang học:** Hiển thị thời khóa biểu tuần, các buổi học trực tuyến và tiến trình môn học.
+  - 🟡 **Bảo lưu:** Hiển thị huy hiệu và thông báo sinh viên đang trong thời gian bảo lưu kết quả học tập.
+  - 🔴 **Bỏ học:** Hiển thị cảnh báo hồ sơ sinh viên đã tạm dừng chương trình đào tạo.
 
 ### Các tính năng nổi bật trên giao diện:
 - **Bảng lịch học theo tuần dạng lưới (Grid View):** Bố cục 7 ngày (Thứ 2 đến Chủ Nhật) theo 3 ca thời gian (*Sáng 07:00 – 11:30*, *Chiều 12:30 – 17:00*, *Tối 17:30 – 21:30*).
