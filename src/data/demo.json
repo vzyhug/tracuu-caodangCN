@@ -1,0 +1,870 @@
+{
+  "students": [
+    {
+      "_id": "00000000001",
+      "hoTen": "Sinh viên minh họa đợt 1",
+      "daoTao": {
+        "maLop": "CX261CT01",
+        "bacDaoTao": "Cao đẳng",
+        "nganhHoc": "Công nghệ thông tin",
+        "dot": 1
+      },
+      "theoDoiHocTap": [
+        {
+          "hocKy": 2,
+          "namHoc": "2026-2027",
+          "monHoc": [
+            {
+              "maMon": "MHMC0105",
+              "daHoc": true
+            },
+            {
+              "maMon": "MHMC0106",
+              "daHoc": true
+            },
+            {
+              "maMon": "MHMC0101",
+              "daHoc": true
+            },
+            {
+              "maMon": "MHMC0102",
+              "daHoc": true
+            },
+            {
+              "maMon": "MH005",
+              "daHoc": true
+            },
+            {
+              "maMon": "MH006",
+              "daHoc": true
+            },
+            {
+              "maMon": "MH007",
+              "daHoc": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "00000000002",
+      "hoTen": "Sinh viên minh họa đợt 2",
+      "daoTao": {
+        "maLop": "CX261VT01",
+        "bacDaoTao": "Cao đẳng",
+        "nganhHoc": "Văn thư hành chính",
+        "dot": 2
+      },
+      "theoDoiHocTap": [
+        {
+          "hocKy": 2,
+          "namHoc": "2026-2027",
+          "monHoc": [
+            {
+              "maMon": "MHMC0105",
+              "daHoc": null
+            },
+            {
+              "maMon": "MHMC0106",
+              "daHoc": null
+            },
+            {
+              "maMon": "MHMC0101",
+              "daHoc": null
+            },
+            {
+              "maMon": "MHMC0102",
+              "daHoc": null
+            },
+            {
+              "maMon": "MH017",
+              "daHoc": true
+            },
+            {
+              "maMon": "MH018",
+              "daHoc": true
+            },
+            {
+              "maMon": "MH015",
+              "daHoc": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subjects": [
+    {
+      "_id": "MĐCT0110",
+      "tenMon": "Ứng dụng trí tuệ nhân tạo"
+    },
+    {
+      "_id": "MĐCT0111",
+      "tenMon": "Thiết kế giao diện ứng dụng"
+    },
+    {
+      "_id": "MĐCT0112",
+      "tenMon": "Quản trị mạng"
+    },
+    {
+      "_id": "MHKT0108",
+      "tenMon": "Kinh tế vĩ mô"
+    },
+    {
+      "_id": "MHKT0112",
+      "tenMon": "Tài chính tiền tệ"
+    },
+    {
+      "_id": "MHKT0114",
+      "tenMon": "Quản trị doanh nghiệp"
+    },
+    {
+      "_id": "MHLG0108",
+      "tenMon": "Kinh tế vĩ mô"
+    },
+    {
+      "_id": "MHLG0111",
+      "tenMon": "Marketing căn bản"
+    },
+    {
+      "_id": "MĐLG0102",
+      "tenMon": "Chuỗi cung ứng"
+    },
+    {
+      "_id": "MĐTA0103",
+      "tenMon": "Ngoại ngữ 2 - Tiếng Trung Quốc 1"
+    },
+    {
+      "_id": "MĐTA0106",
+      "tenMon": "Từ vựng học"
+    },
+    {
+      "_id": "MĐLN0003",
+      "tenMon": "Kỹ năng soạn thảo văn bản"
+    },
+    {
+      "_id": "MĐTQ0103",
+      "tenMon": "Ngoại ngữ 2 - Tiếng Anh 1"
+    },
+    {
+      "_id": "MĐTQ0105",
+      "tenMon": "Ngữ âm và từ vựng Tiếng Trung Quốc"
+    },
+    {
+      "_id": "MHVT0112",
+      "tenMon": "Lịch sử công tác văn thư Việt Nam"
+    },
+    {
+      "_id": "MHVT0113",
+      "tenMon": "Đạo đức nghề nghiệp của cán bộ công chức"
+    },
+    {
+      "_id": "MHMC0101",
+      "tenMon": "Giáo dục chính trị",
+      "nhom": "mon_chung"
+    },
+    {
+      "_id": "MHMC0105",
+      "tenMon": "Tiếng Anh",
+      "nhom": "mon_chung"
+    },
+    {
+      "_id": "MHMC0106",
+      "tenMon": "Tin học",
+      "nhom": "mon_chung"
+    },
+    {
+      "_id": "MHMC0102",
+      "tenMon": "Pháp luật",
+      "nhom": "mon_chung"
+    },
+    {
+      "_id": "MH005",
+      "tenMon": "Kiến trúc máy tính",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH006",
+      "tenMon": "Cơ sở dữ liệu",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH007",
+      "tenMon": "Kỹ thuật lập trình",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH008",
+      "tenMon": "Nhập môn ngành Kế toán",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH009",
+      "tenMon": "Quản trị học",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH010",
+      "tenMon": "Luật doanh nghiệp",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH011",
+      "tenMon": "Kinh tế vi mô",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH012",
+      "tenMon": "Nhập môn ngành Logistics",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH013",
+      "tenMon": "Ngữ âm và Âm vị học Tiếng Anh",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH014",
+      "tenMon": "Cơ sở văn hoá Việt Nam",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH015",
+      "tenMon": "Tiếng Việt thực hành",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH016",
+      "tenMon": "Tiếng Trung Quốc Tổng hợp 1",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH017",
+      "tenMon": "Khoa học quản lý nhà nước trong công tác văn thư",
+      "nhom": "mon_nganh"
+    },
+    {
+      "_id": "MH018",
+      "tenMon": "Nhập môn công tác văn thư",
+      "nhom": "mon_nganh"
+    }
+  ],
+  "schedules": [
+    {
+      "maLop": "CX261CT01",
+      "maMon": "MĐCT0110",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        1,
+        2
+      ],
+      "soTinChi": 2,
+      "ngayBatDau": "2026-11-16",
+      "ngayKetThuc": "2026-11-30",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-16",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-23",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-30",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 2 Ngày 16/11/2026 Ngày 23/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 2 Ngày 30/11/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261CT01",
+      "maMon": "MĐCT0111",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        1,
+        2
+      ],
+      "soTinChi": 3,
+      "ngayBatDau": "2026-11-18",
+      "ngayKetThuc": "2026-12-02",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-18",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-25",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-02",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 4 Ngày 18/11/2026 Ngày 25/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 4 Ngày 02/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261CT01",
+      "maMon": "MĐCT0112",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        1,
+        2
+      ],
+      "soTinChi": 2,
+      "ngayBatDau": "2026-11-19",
+      "ngayKetThuc": "2026-12-03",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-19",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-26",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-03",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 5 Ngày 19/11/2026 Ngày 26/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 5 Ngày 03/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MHVT0112",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        1,
+        2
+      ],
+      "soTinChi": 3,
+      "ngayBatDau": "2026-11-16",
+      "ngayKetThuc": "2026-11-30",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-16",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-23",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-30",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 2 Ngày 16/11/2026 Ngày 23/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 2 Ngày 30/11/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MHVT0113",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        1,
+        2
+      ],
+      "soTinChi": 2,
+      "ngayBatDau": "2026-11-18",
+      "ngayKetThuc": "2026-12-02",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-18",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-25",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-02",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 4 Ngày 18/11/2026 Ngày 25/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 4 Ngày 02/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MĐLN0003",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        1,
+        2
+      ],
+      "soTinChi": 3,
+      "ngayBatDau": "2026-11-19",
+      "ngayKetThuc": "2026-12-03",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-19",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-26",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-03",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 5 Ngày 19/11/2026 Ngày 26/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 5 Ngày 03/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MHMC0101",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        2
+      ],
+      "soTinChi": 5,
+      "ngayBatDau": "2026-11-17",
+      "ngayKetThuc": "2026-12-01",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-17",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-24",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-01",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 3 Ngày 17/11/2026 Ngày 24/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 3 Ngày 01/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MHMC0105",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        2
+      ],
+      "soTinChi": 4,
+      "ngayBatDau": "2026-11-20",
+      "ngayKetThuc": "2026-12-04",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-20",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-27",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-04",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 6 Ngày 20/11/2026 Ngày 27/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 6 Ngày 04/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MHMC0106",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        2
+      ],
+      "soTinChi": 3,
+      "ngayBatDau": "2026-11-21",
+      "ngayKetThuc": "2026-12-05",
+      "buoiHoc": [
+        {
+          "ngay": "2026-11-21",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-11-28",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-05",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 7 Ngày 21/11/2026 Ngày 28/11/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 7 Ngày 05/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    },
+    {
+      "maLop": "CX261VT01",
+      "maMon": "MHMC0102",
+      "hocKy": 2,
+      "namHoc": "2026-2027",
+      "dotTuyenSinh": [
+        2
+      ],
+      "soTinChi": 2,
+      "ngayBatDau": "2026-12-07",
+      "ngayKetThuc": "2026-12-11",
+      "buoiHoc": [
+        {
+          "ngay": "2026-12-07",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-09",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "huong_dan"
+        },
+        {
+          "ngay": "2026-12-11",
+          "gioBatDau": "19:00",
+          "gioKetThuc": "21:30",
+          "muiGio": "Asia/Ho_Chi_Minh",
+          "loai": "on_tap_kiem_tra_giua_ky"
+        }
+      ],
+      "huongDan": {
+        "soGio": 8,
+        "lichGoc": "Tối thứ 2 Ngày 07/12/2026 Tối thứ 4 Ngày 09/12/2026"
+      },
+      "onTapKiemTraGiuaKy": {
+        "soGio": 4,
+        "lichGoc": "Tối thứ 6 Ngày 11/12/2026"
+      },
+      "cacGiaiDoan": [
+        {
+          "giaiDoan": 1,
+          "thoiGianGoc": "26/10/2026 - 15/11/2026 (3 tuần)",
+          "noiDung": "Sinh viên tự học trên hệ thống E-Learning, hoàn thành ít nhất 1/2 số bài học của mỗi môn. Tự chủ động sắp xếp thời gian."
+        },
+        {
+          "giaiDoan": 2,
+          "thoiGianGoc": "16/11/2026 - 13/12/2026",
+          "noiDung": "Học tối 19h00 - 21h30 theo lịch từng môn trong bảng bên dưới: 2 buổi hướng dẫn học tập và 1 buổi ôn tập, kiểm tra giữa kỳ."
+        },
+        {
+          "giaiDoan": 3,
+          "thoiGianGoc": "07/12/2026 - 20/12/2026 (2 tuần)",
+          "noiDung": "Sinh viên tự chủ động sắp xếp thời gian hoàn thành bài tập lớn hoặc ôn tập; thi cuối kỳ theo lịch nhà trường thông báo."
+        }
+      ],
+      "ghiChuChung": "- Địa điểm học: Google Meet / E-Learning. Giờ học với giảng viên: Tối 19h00 - 21h30 (giảng viên hướng dẫn học tập và ôn tập qua Google Meet); - Giai đoạn 1: sinh viên học trên hệ thống E-Learning, phải hoàn thành ít nhất 1/2 số bài học của môn học trong thời gian từ 26/10 đến 15/11/2026; - Giai đoạn 1 và 3: sinh viên tự chủ động sắp xếp thời gian tự học, làm bài tập lớn và ôn tập, không có buổi học cố định; - Từ 07/12/2026 sinh viên bắt đầu giai đoạn 3, song song với các buổi học cuối (nếu có) của giai đoạn 2; - Giảng viên hướng dẫn học tập và Ôn tập: Link google meet được gắn trong thông báo chung của môn học; - Thi cuối kỳ: Nhà trường sẽ gửi lịch thi thời gian cụ thể."
+    }
+  ]
+}

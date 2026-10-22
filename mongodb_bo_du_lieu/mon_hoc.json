@@ -1,0 +1,156 @@
+[
+  {
+    "_id": "MĐCT0110",
+    "tenMon": "Ứng dụng trí tuệ nhân tạo"
+  },
+  {
+    "_id": "MĐCT0111",
+    "tenMon": "Thiết kế giao diện ứng dụng"
+  },
+  {
+    "_id": "MĐCT0112",
+    "tenMon": "Quản trị mạng"
+  },
+  {
+    "_id": "MHKT0108",
+    "tenMon": "Kinh tế vĩ mô"
+  },
+  {
+    "_id": "MHKT0112",
+    "tenMon": "Tài chính tiền tệ"
+  },
+  {
+    "_id": "MHKT0114",
+    "tenMon": "Quản trị doanh nghiệp"
+  },
+  {
+    "_id": "MHLG0108",
+    "tenMon": "Kinh tế vĩ mô"
+  },
+  {
+    "_id": "MHLG0111",
+    "tenMon": "Marketing căn bản"
+  },
+  {
+    "_id": "MĐLG0102",
+    "tenMon": "Chuỗi cung ứng"
+  },
+  {
+    "_id": "MĐTA0103",
+    "tenMon": "Ngoại ngữ 2 - Tiếng Trung Quốc 1"
+  },
+  {
+    "_id": "MĐTA0106",
+    "tenMon": "Từ vựng học"
+  },
+  {
+    "_id": "MĐLN0003",
+    "tenMon": "Kỹ năng soạn thảo văn bản"
+  },
+  {
+    "_id": "MĐTQ0103",
+    "tenMon": "Ngoại ngữ 2 - Tiếng Anh 1"
+  },
+  {
+    "_id": "MĐTQ0105",
+    "tenMon": "Ngữ âm và từ vựng Tiếng Trung Quốc"
+  },
+  {
+    "_id": "MHVT0112",
+    "tenMon": "Lịch sử công tác văn thư Việt Nam"
+  },
+  {
+    "_id": "MHVT0113",
+    "tenMon": "Đạo đức nghề nghiệp của cán bộ công chức"
+  },
+  {
+    "_id": "MHMC0101",
+    "tenMon": "Giáo dục chính trị",
+    "nhom": "mon_chung"
+  },
+  {
+    "_id": "MHMC0105",
+    "tenMon": "Tiếng Anh",
+    "nhom": "mon_chung"
+  },
+  {
+    "_id": "MHMC0106",
+    "tenMon": "Tin học",
+    "nhom": "mon_chung"
+  },
+  {
+    "_id": "MHMC0102",
+    "tenMon": "Pháp luật",
+    "nhom": "mon_chung"
+  },
+  {
+    "_id": "MH005",
+    "tenMon": "Kiến trúc máy tính",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH006",
+    "tenMon": "Cơ sở dữ liệu",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH007",
+    "tenMon": "Kỹ thuật lập trình",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH008",
+    "tenMon": "Nhập môn ngành Kế toán",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH009",
+    "tenMon": "Quản trị học",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH010",
+    "tenMon": "Luật doanh nghiệp",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH011",
+    "tenMon": "Kinh tế vi mô",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH012",
+    "tenMon": "Nhập môn ngành Logistics",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH013",
+    "tenMon": "Ngữ âm và Âm vị học Tiếng Anh",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH014",
+    "tenMon": "Cơ sở văn hoá Việt Nam",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH015",
+    "tenMon": "Tiếng Việt thực hành",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH016",
+    "tenMon": "Tiếng Trung Quốc Tổng hợp 1",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH017",
+    "tenMon": "Khoa học quản lý nhà nước trong công tác văn thư",
+    "nhom": "mon_nganh"
+  },
+  {
+    "_id": "MH018",
+    "tenMon": "Nhập môn công tác văn thư",
+    "nhom": "mon_nganh"
+  }
+]

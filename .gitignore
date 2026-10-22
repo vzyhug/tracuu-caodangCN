@@ -1,0 +1,20 @@
+node_modules/
+dist/
+functions/lib/
+.firebase/
+*.log
+.env
+.env.local
+.env.*.local
+functions/.env*
+!functions/.env.example
+data/private/
+**/*service-account*.json
+**/*serviceAccount*.json
+coverage/
+tmp/
+
+# Real student records stay local; the web app uses synthetic demo data.
+DS_K26_DTTX_DOT_1&2.xlsx
+mongodb_bo_du_lieu/sinh_vien.json
+mongodb_bo_du_lieu/tra_cuu_mau.json

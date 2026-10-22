@@ -1,0 +1,9 @@
+{
+  "indexes": [{ "collectionGroup": "tkb", "queryScope": "COLLECTION", "fields": [
+    { "fieldPath": "maLop", "order": "ASCENDING" },
+    { "fieldPath": "hocKy", "order": "ASCENDING" },
+    { "fieldPath": "namHoc", "order": "ASCENDING" },
+    { "fieldPath": "dotTuyenSinh", "arrayConfig": "CONTAINS" }
+  ] }],
+  "fieldOverrides": []
+}
