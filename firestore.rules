@@ -1,7 +1,10 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Only the Admin SDK in Cloud Functions/import scripts accesses this data.
-    match /{document=**} { allow read, write: if false; }
+    // Cho phép đọc dữ liệu tra cứu từ Web client, cấm ghi/sửa/xóa
+    match /{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
   }
 }

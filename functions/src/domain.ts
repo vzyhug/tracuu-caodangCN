@@ -1,6 +1,6 @@
 export interface HistoryCourse { maMon: string; daHoc: boolean | null }
 export interface Student {
-  _id: string; hoTen: string;
+  _id: string; hoTen: string; ghiChu?: string;
   daoTao: { maLop: string; dot: number; nganhHoc: string; bacDaoTao: string };
   theoDoiHocTap: { hocKy: number; namHoc: string; monHoc: HistoryCourse[] }[];
 }
@@ -18,7 +18,10 @@ export interface LookupInput { mssv: string; hocKy: number; namHoc: string }
 export type NamedHistory = HistoryCourse & { tenMon: string; hocKy: number; namHoc: string };
 export type PlannedCourse = Schedule & { tenMon: string; trangThaiHocTap: string; canXacMinh: boolean };
 export interface LookupResult {
-  thongTinSinhVien: { mssv: string; hoTen: string; maLop: string; dot: number; nganhHoc: string; bacDaoTao: string };
+  thongTinSinhVien: {
+    mssv: string; hoTen: string; maLop: string; dot: number; nganhHoc: string; bacDaoTao: string;
+    trangThai: string; ghiChu?: string;
+  };
   hocKy: number; namHoc: string; monDaHoc: NamedHistory[]; monChuaRoTrangThai: NamedHistory[];
   lichHocDuKien: PlannedCourse[]; canhBao: string[];
 }
@@ -61,13 +64,25 @@ export function buildLookup(student: Student, subjects: Subject[], schedules: Sc
     };
   }).sort((a, b) => a.ngayBatDau.localeCompare(b.ngayBatDau) || a.maMon.localeCompare(b.maMon));
   const unknown = history.filter(m => m.daHoc === null && !completed.has(m.maMon));
+
+  const rawGhiChu = student.ghiChu?.trim() || '';
+  let trangThai = 'Đang học';
+  if (/bỏ học/i.test(rawGhiChu)) {
+    trangThai = 'Bỏ học';
+  } else if (/bảo lưu/i.test(rawGhiChu)) {
+    trangThai = 'Bảo lưu';
+  }
+
   return {
     thongTinSinhVien: {
       mssv: student._id, hoTen: student.hoTen, maLop: student.daoTao.maLop,
       dot: student.daoTao.dot, nganhHoc: student.daoTao.nganhHoc, bacDaoTao: student.daoTao.bacDaoTao,
+      trangThai, ghiChu: student.ghiChu,
     },
     hocKy: input.hocKy, namHoc: input.namHoc, monDaHoc, monChuaRoTrangThai: unknown, lichHocDuKien,
     canhBao: [
+      ...(trangThai === 'Bỏ học' ? ['Sinh viên hiện có trạng thái BỎ HỌC trên hệ thống đào tạo. Thời khóa biểu chỉ mang tính tham khảo hồ sơ.'] : []),
+      ...(trangThai === 'Bảo lưu' ? ['Sinh viên hiện đang trong thời gian BẢO LƯU kết quả học tập.'] : []),
       ...(unknown.length ? ['Các môn chưa rõ trạng thái vẫn được giữ trong lịch dự kiến để đối chiếu.'] : []),
       ...(!scheduled.length ? ['Chưa có thời khóa biểu cho lớp và học kỳ đã chọn.'] : []),
     ],
