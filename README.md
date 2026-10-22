@@ -48,12 +48,12 @@ cd tracuu-caodangCN
 npm install
 
 # 3. Tạo file cấu hình biến môi trường .env.local ở thư mục gốc:
-# (Copy từ .env.example hoặc cấu hình kết nối Firebase)
+# (Lấy thông tin từ Firebase Console > Project Settings > General > Your Apps)
 VITE_DATA_MODE=firebase
-VITE_FIREBASE_API_KEY=AIzaSyCvfQ4vy4jK14sawFDf1Yv1kdp0AF0TRsU
-VITE_FIREBASE_AUTH_DOMAIN=test-tracuu.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=test-tracuu
-VITE_FIREBASE_APP_ID=1:670364739633:web:2f427a6f71b9b272f98d10
+VITE_FIREBASE_API_KEY=your_firebase_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
 VITE_USE_EMULATORS=false
 
 # 4. Khởi động Web Dev Server
